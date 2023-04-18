@@ -1,7 +1,17 @@
+@font-face {
+  font-family: 'Montserrat', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap');
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Montserrat;
+}
+
+ul {
+  list-style: none;
 }
 
 header, 
@@ -9,19 +19,91 @@ footer {
   background-color: #1f2937;
   color: #e5e7eb;
   font-size: 18px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 75px;
+  padding: 15px;
 }
 
-header h1 {
+header .nav {
+  display: flex;
+  width: 80%;
+  gap: 25px;
+}
+
+header .nav #logo {
+  flex: 1;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+header .content {
+  display: flex;
+  width: 80%;
+  margin-bottom: 75px;
+  gap: 15px;
+}
+
+header img {
+  width: 70%;
+  background-color: gray;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+header .content h1 {
   color: #f9faf8;
   font-size: 48px;
 }
 
-#logo {
-  font-size: 24px;
+header .content button {
+  margin-top: 10px;
 }
 
 button {
   background-color: #3882F6;
+  border: none;
+  padding: 5px 13px;
+  border-radius: 5px;
+  color: white;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 40px 0 75px 0;
+}
+
+section .cardContainer {
+  display: flex;
+  width: 80%;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+section .cardContainer .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 175px;
+  text-align: center;
+}
+
+section .cardContainer .box {
+  width: 100%;
+  height: 175px;
+  border: 4px solid #3882F6;
+  border-radius: 20px;
+  justify-content: center;
 }
 
 section h2 {
@@ -32,12 +114,38 @@ section h2 {
 
 #testimonial {
   background-color: #e5e7EB;
+  padding: 50px 20%;
 }
 
-section .quote {
+#testimonial h4 {
+  align-self: end;
+  margin-top: -50px;
+  margin-right: 50px;
+}
+
+#testimonial .quote {
   font-size: 36px;
   font-style: italic;
   color: #1f2937;
+}
+
+.cta {
+  color: white;
+  font-size: 13px;
+}
+
+.cta .content {
+  background-color: #3882f6;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 70%;
+  border-radius: 8px;
+  padding: 50px 0;
+}
+
+.cta button {
+  border: 1px solid white;
 }
 
 footer {
